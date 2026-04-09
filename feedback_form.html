@@ -1,0 +1,142 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Feedback Form | My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/layout-loader.js" defer></script>
+  </head>
+
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="contact-us-sec">
+        <div class="contact-us layout feedback-wrapper">
+          <h2 class="text-center uppercase pd-30" style="color: turquoise">
+            Feedback Form
+          </h2>
+          <hr />
+
+          <div class="form-card feedback-card">
+            <form
+              class="contact-form feedback-form"
+              name="feedback"
+              method="POST"
+              data-netlify="true"
+            >
+              <input type="hidden" name="form-name" value="feedback" />
+              <div class="form-row">
+                <label class="field-label" for="feedback-name">Name</label>
+                <input
+                  class="field-input"
+                  type="text"
+                  id="feedback-name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <label class="field-label" for="feedback-email">Email</label>
+                <input
+                  class="field-input"
+                  type="email"
+                  id="feedback-email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <label class="field-label" for="feedback-number">Number</label>
+                <input
+                  class="field-input"
+                  type="tel"
+                  id="feedback-number"
+                  name="number"
+                  placeholder="10-digit mobile number"
+                  pattern="[0-9]{10}"
+                  required
+                />
+              </div>
+
+              <fieldset class="radio-group">
+                <legend>Is this your first visit to the website?</legend>
+                <label
+                  ><input
+                    type="radio"
+                    name="first_visit"
+                    value="yes"
+                    required
+                  />
+                  Yes</label
+                >
+                <label
+                  ><input type="radio" name="first_visit" value="no" required />
+                  No</label
+                >
+              </fieldset>
+
+              <fieldset class="radio-group">
+                <legend>How was our website form?</legend>
+                <label
+                  ><input
+                    type="radio"
+                    name="website_rating"
+                    value="excellent"
+                    required
+                  />
+                  Excellent</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="website_rating"
+                    value="good"
+                    required
+                  />
+                  Good</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="website_rating"
+                    value="bad"
+                    required
+                  />
+                  Bad</label
+                >
+              </fieldset>
+
+              <div class="form-row">
+                <label class="field-label" for="feedback-message"
+                  >Feedback</label
+                >
+                <textarea
+                  class="field-input field-textarea"
+                  id="feedback-message"
+                  name="feedback"
+                  placeholder="Write your feedback"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn2" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+  </body>
+</html>
