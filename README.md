@@ -1,64 +1,74 @@
 # My Portfolio Website
 
-A personal multi-page portfolio website built with HTML and CSS to present my background, interests, ideas, and contact details.
+Note: The current content on this portfolio website was created during my 2nd semester and will be updated soon.
 
-## Project Overview
+A personal, multi-page portfolio website showcasing my academics, experience, hobbies, startup ideas, and creative work.
 
-This portfolio contains separate pages for key sections of my profile, including academics, hobbies, experience, startup ideas, and contact/feedback forms.
+## Live Website
 
-## Pages Included
+- Production URL: https://my-portfolio-ronak.netlify.app/
+- Hosting Platform: Netlify (https://app.netlify.com/)
 
-- `1.home.html` - Landing/Home page
-- `2.Academics.html` - Academic background
-- `3.Hobbies.html` - Hobbies and interests
-- `4.experience.html` - Experience details
-- `5.Startup_ideas.html` - Startup ideas
-- `6.Slogan_Spectrum.html` - Slogan spectrum section
-- `7.contact.html` - Contact information page
-- `8.Feedback_form.html` - Feedback form page
+## About The Project
+
+This project is built as a static portfolio website using HTML, CSS, and a small JavaScript utility for shared layout loading. It is organized into dedicated pages for each section of my profile and includes working Contact and Feedback forms.
+
+## Features
+
+- Multi-page navigation with a clean section-wise structure
+- Dedicated pages for academics, hobbies, experience, startup ideas, and slogans
+- Shared header/footer loading via JavaScript partials
+- Contact form and feedback form integrated for Netlify form handling
+- Media-rich design with custom images and audio assets
+
+## Netlify Form Integration
+
+The Contact and Feedback pages were updated to work correctly after deployment on Netlify.
+
+- Added Netlify form attributes in both forms
+- Included hidden form-name fields for Netlify form detection
+- Kept POST method and named forms for server-side submission tracking
+
+This ensures submissions from:
+
+- contact.html
+- feedback_form.html
+
+are captured in the Netlify dashboard.
 
 ## Tech Stack
 
 - HTML5
 - CSS3
-
-## Assets and Styling
-
-All shared styling and media files are stored in:
-
-- `css_image_song/style.css`
-- `css_image_song/` (images and audio assets)
+- Vanilla JavaScript
 
 ## Project Structure
 
 ```text
 My_Portfolio_Ronak/
-|-- 1.home.html
-|-- 2.Academics.html
-|-- 3.Hobbies.html
-|-- 4.experience.html
-|-- 5.Startup_ideas.html
-|-- 6.Slogan_Spectrum.html
-|-- 7.contact.html
-|-- 8.Feedback_form.html
-|-- css_image_song/
+|-- index.html
+|-- academics.html
+|-- hobbies.html
+|-- experience.html
+|-- startup_ideas.html
+|-- slogan_Spectrum.html
+|-- contact.html
+|-- feedback_form.html
+|-- css/
 |   |-- style.css
-|   |-- (images and audio files)
+|-- js/
+|   |-- layout-loader.js
+|-- partials/
+|-- static/
+|   |-- images and audio assets
 ```
 
-## How to Run Locally
+## Run Locally
 
-1. Clone or download this repository.
+1. Clone this repository.
 2. Open the project folder.
-3. Open `1.home.html` in your browser to start browsing the website.
-
-## Future Improvements
-
-- Add responsive enhancements for more screen sizes.
-- Improve accessibility with better semantic structure and ARIA labels.
-- Add JavaScript for interactive elements and form validation.
-- Deploy the site using GitHub Pages.
+3. Open index.html in your browser.
 
 ## Author
 
-Ronak
+Ronak Maniya
