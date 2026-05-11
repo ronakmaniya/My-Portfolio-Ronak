@@ -1,35 +1,37 @@
 # My Portfolio Website
 
-Note: The current content on this portfolio website was created during my 2nd semester and will be updated soon.
+Personal, multi-page portfolio showcasing academics, experience, hobbies, startup ideas, and creative work.
 
-A personal, multi-page portfolio website showcasing my academics, experience, hobbies, startup ideas, and creative work.
+## Status
+
+This version contains content written during my 2nd semester and uses a plain HTML/CSS/JavaScript stack; it will be refreshed. For the latest refactor, see the 2.0 repo: https://github.com/ronakmaniya/My-Portfolio-Ronak-2.0
 
 ## Live Website
 
 - Production URL: https://my-portfolio-ronak.netlify.app/
 - Hosting Platform: Netlify (https://app.netlify.com/)
 
-## About The Project
+## About the Project
 
-This project is built as a static portfolio website using HTML, CSS, and a small JavaScript utility for shared layout loading. It is organized into dedicated pages for each section of my profile and includes working Contact and Feedback forms.
+This is a static site built with HTML, CSS, and a small JavaScript utility for shared layout loading. It is organized into dedicated pages for each section of my profile and includes working Contact and Feedback forms.
 
 ## Features
 
-- Multi-page navigation with a clean section-wise structure
+- Multi-page navigation with clear sectioning
 - Dedicated pages for academics, hobbies, experience, startup ideas, and slogans
 - Shared header/footer loading via JavaScript partials
-- Contact form and feedback form integrated for Netlify form handling
+- Contact and feedback forms integrated for Netlify form handling
 - Media-rich design with custom images and audio assets
 
 ## Netlify Form Integration
 
-The Contact and Feedback pages were updated to work correctly after deployment on Netlify.
+The Contact and Feedback pages are configured for Netlify form handling.
 
 - Added Netlify form attributes in both forms
 - Included hidden form-name fields for Netlify form detection
 - Kept POST method and named forms for server-side submission tracking
 
-This ensures submissions from:
+Submissions from:
 
 - contact.html
 - feedback_form.html
